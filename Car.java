@@ -1,9 +1,14 @@
-class Car {
-private final Engine engine;
-public Car(Engine engine) {
-this.engine = engine;
+class Car implements VehicleInterface, DoorInterface {
+@Override
+public void drive() {
 }
-void start() {
-engine.start();
+@Override
+public void stop() {
+}
+@Override
+public void refuel() {
+}
+@Override
+public void openDoors() {
 }
 }
